@@ -1,6 +1,8 @@
 
 import json
 
+
+# This part of the code opens the file called "passwords" and replaces the data in it using the function save_data.
 DATA_FILE = "passwords.json"
 
 try: 
@@ -65,6 +67,7 @@ def view(dictionary):
             print(f"Password: {password}")
     open_program()
 
+# A function to edit the password.
 def edit(dictionary):
     if not dictionary:
         print("\nThere are no existing passwords.\n")
@@ -86,7 +89,7 @@ def edit(dictionary):
             print("Error: Password doesn't exist.")
             open_program()
 
-# A function to delete the password. ?
+# A function to delete the password. 
 def delete(dictionary):
     a = input("Press Y to continue. Press E to exit.\n")
     if a == "Y":
